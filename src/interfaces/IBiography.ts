@@ -16,7 +16,7 @@ export interface IBiography {
   }[];
   country: string;
   city?: string;
-  state: { name: string; abbreviation: string };
+  state?: { name: string; abbreviation: string };
   link?: string;
   searched?: Date;
 }
