@@ -10,8 +10,13 @@ export interface IBiography {
   nameProduction?: string;
   nameAuthor?: string;
   lastNameAuthor?: string;
-  organizers?: string[];
+  organizers?: {
+    nameAuthor?: string;
+    lastNameAuthor?: string;
+  }[];
   country: string;
-  local: string;
+  city?: string;
+  state: { name: string; abbreviation: string };
   link?: string;
+  searched?: Date;
 }
